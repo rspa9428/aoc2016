@@ -176,9 +176,7 @@ rl:r[;1]                                                                        
 rro:rr:r[;-1]                                                                                                           / rotate right (o=orig)
 rb:rbo:{rro[x;1+i+3<i:x?y]}                                                                                             / rotate based on pos (o=orig)
 {.(*y;x;y 1)}/[i;x]                                                                                                     / run over inputs
-
-/- part 2
-rb:{m@(rbo[;y]'m:rl[x]'!8)?x}                                                                                           / inverse rb
+rb:{m@(rbo[;y]'m:rl[x]'!8)?x}                                                                                           / part 2, redefining: inverse rb
 rr:rl                                                                                                                   / swap rr/rl
 rl:rro
 i:"fbgdceah"                                                                                                            / new input
