@@ -59,7 +59,7 @@ ix:{(,:;(::),)["x"=*a]@.*|:"="\:a:x 2}
 rot:{.[`m;j;:;.q.rotate[-.:x 4;m . j:ix x]]}
 {.:[3#*x]x}'i;                                                                                                          / run, modifying global m as we go
 +//m                                                                                                                    / part 1
-.q.show@" 1"@m                                                                                                          / part 2
+-1" 1"@m;                                                                                                               / part 2
 
 "Problem 9"
 i:*0:`p9                                                                                                                / input
