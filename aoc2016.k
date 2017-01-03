@@ -49,7 +49,7 @@ d:{,/ss[x]'a}
 a:,/.Q.a@{x,/:_[1+x;l],'x}'l:!26                                                                                        / list of aba etc.        
 d:{x@<x:ss[x]'(y;3#1_y)}
 f:{|/{{|/{&/y in'x}[x]'|:\0 1}@.q.mod[y bin x;2]}[;& x in "[]"]'?:d[x]'a}                                               / check if supports SSL
-+/f'0:`p7                                                                                                               / part 2
++/f':0:`p7                                                                                                              / part 2
 
 "Problem 8"
 m:6 50#0b                                                                                                               / matrix m
