@@ -181,13 +181,11 @@ rl:r[;1]                                                                        
 rro:rr:r[;-1]                                                                                                                   / rotate right (o=orig)
 rb:rbo:{rro[x;1+i+3<i:x?y]}                                                                                                     / rotate based on pos (o=orig)
 {value(first y;x;y 1)}/[i;x]                                                                                                    / run over inputs
-
-/- part 2
-rb:{m@(rbo[;y]each m:rl[x]each til 8)?x}                                                                                        / inverse rb
+rb:{m@(rbo[;y]each m:rl[x]each til 8)?x}                                                                                        / part 2, redefining: inverse rb
 rr:rl                                                                                                                           / swap rr/rl
 rl:rro
 i:"fbgdceah"                                                                                                                    / new input
-{value(first y;x;reverse y 1)}/[i;reverse x]                                                                                    / run backwards over inputs
+{value(first y;x;reverse y 1)}/[i;reverse x]                                                                                    / run backwards over inputs                                                                                 / run backwards over inputs
 
 "Problem 22"
 i:flip 1 _ read0`p22                                                                                                            / input
