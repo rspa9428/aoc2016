@@ -88,17 +88,17 @@ n:4;                                                                            
 i:value each read0`p11                                                                                                          / inputs 1 and 2 (elevator floor 0;elementA microchip flr 2 and generator flr 1; ....)
 ia: {not max{(not(=). x@y)&x[y;0]in (x@t@where not(t:til w)in y)[;1]}[1 _ x]peach til w}                                        / check if a given configuration is allowed
 c:{x[0],x[0]*0N 2#1 _ x}                                                                                                        / covert to (level;element 1;element 2 ...)
-m:{x+/:c each raze -1 1,/:\:l where l[;i]~\:count[i:where not x[0]=1 _ raze x]#0b};                                             / move possibilities
+m:{x+/:c peach raze -1 1,/:\:l where l[;i]~\:count[i:where not x[0]=1 _ raze x]#0b};                                            / move possibilities
 p:{s:distinct sr where ia peach sr:distinct raze m peach x 1;
-        s:distinct asc s[;0],'asc each s[;1+til w];                                                                             / iterate func (BFS, with much pruning)
+        s:distinct asc s[;0],'asc peach s[;1+til w];                                                                            / iterate func (BFS, with much pruning)
             $[e in s@:where(not s in x 2)&{min raze[x]within 0 3}peach s;
         (1+x 0;());(1+x 0;s;distinct x[2],s)]}                                                                                  / (steps taken;current states; prev. states)
 init:{is::(0;i;i:enlist x);w::count 1 _ x;                                                                                      / initialize (set globals l, w;end:e,init state:is)
-            l::k where (sum each k:neg[2*w]#'0b vs'til "j"$2 xexp w*2)within 1 2;
-            e::(n-1),w#enlist 2#n-1;}     
+            l::k where (sum peach k:neg[2*w]#'0b vs'til "j"$2 xexp w*2)within 1 2;
+            e::(n-1),w#enlist 2#n-1;}
 f:{init x;first {count x 1}p/is}                                                                                                / run function, more cores help massively (uses peach)
 f first i                                                                                                                       / part 1
-f i 1                                                                                                                           / part 2
+f i 1                                                                                                                           / part 2                                                                                                                        / part 2
 
 "Problem 12"
 \l assembunny.q
