@@ -4,6 +4,8 @@ aoc2016.k - k solutions
 
 aoc2016.q - corresponding q translations
 
+* I've included q translations as I thought they might be useful as a learning tool
+
 * Tried to credit people where possible, let me know if I've missed anything
 
 * Only had a finite amount of energy for tidying things up and/or trying to optimize, so I'm sure many of these are neither the fastest, nor the tersest way
