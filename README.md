@@ -1,6 +1,6 @@
 # advent of code 2016
 
-aoc2016.k - k versions
+aoc2016.k - k solutions
 
 aoc2016.q - corresponding q translations
 
