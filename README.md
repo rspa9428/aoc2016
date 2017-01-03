@@ -8,7 +8,11 @@ aoc2016.q - corresponding q translations
 
 * Only had a finite amount of energy for tidying things up and/or trying to optimize, so I'm sure many of these are neither the fastest, nor the tersest way
 
-* NB some of the problems run much faster when running with multiple cores (as they use peach), particularly 5, 11, 14 and 24
+# running time
+
+* Some of the problems run much faster when running with multiple cores (as they use peach), particularly 5, 11, 14 and 24
+* I wouldn't recommend running 5 or 14 on an old laptop
+* with a decent machine and using multiple cores, the whole thing runs through in under a minute, but much slower without
 
 # assembunny (problems 12, 23 and 25)
 * For these, I opted for manual alterations (as opposed to coding up the corresponding alterations to unravel loops) to the input p files. 
