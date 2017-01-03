@@ -1,0 +1,17 @@
+cpy 1 a
+cpy 1 b
+cpy 26 d
+jnz c 2
+jnz 1 5
+cpy 7 c
+inc d
+dec c
+jnz c -2
+fib d a
+cpy 18 c
+cpy 11 d
+mul d d c
+add d a
+jnz 0 0
+jnc 0 0
+jnz 0 0
