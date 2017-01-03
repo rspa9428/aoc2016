@@ -2,7 +2,7 @@
 
 aoc2016.k - k versions
 
-aoc2016.q - q translations
+aoc2016.q - corresponding q translations
 
 * Tried to credit people where possible, let me know if I've missed anything
 
