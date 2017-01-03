@@ -204,12 +204,12 @@ a:12;
 st:,/(!#m),/:'&:'m:~"#"=i:0:`p24                                                                                        / st street map of all coords of input map m
 n:{j,x@j:*<x}'i?\:/:l:8#.Q.n                                                                                            / coords of "0-7"
 dj:0N*di:t!!:'t:1+!7                                                                                                    / global dict dj, how many steps from e.g 7 to each 0 1 2 3 ..
-sm:(`u#st)!{c@&m ./:c:y+/:x}[,/-:\|:\0 1]'st                                                                            / street map of where each point can go
+sm:(`u#st)!{c@&m ./:c:y+/:x}[,/-:\|:\0 1]':st                                                                           / street map of where each point can go
 g:{dj[x 3;s@:&x[3]>s:n?a:?r@&~(r:,/sm x 2)in*x]:1+x 1;(a,*x;1+x 1;a;x 3)}                                               / iterate func (prev visited;count;new pos's;start pt)
 {{x[3]>+/~^dj[x 3]}g/(();0;,n@x;x)}'!dj;                                                                                / find all distances b/w 2 points for each key di
 p:(`u#+k,'|k:(&#:'di;,/di))!,/2#,:,/dj                                                                                  / map of distances b/w each 2 points
 pp:0,'1+7{,/(>:'t=/:t:*x)@\:x:0,'1+x}/,!0                                                                               / all perms of paths, using arthur's prm from 2015 aoc (can also use shotgun if being lazy)
-f:&/(+/p@1_{y,x}':)'                                                                                                    / min distance for set of travel paths 
+f:&/(+/p@1_{y,x}':)':                                                                                                   / min distance for set of travel paths 
 f pp                                                                                                                    / part 1
 f pp,'0                                                                                                                 / part 2, finish at 0
 
