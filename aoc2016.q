@@ -49,7 +49,7 @@ sum c each read0`p7                                                             
 a:raze .Q.a@{x,/:_[1+x;l],'x}each l:til 26                                                                                      / list of aba etc.        
 d:{asc ss[x]each(y;3#1 _ y)}
 f:{max{{max{min y in'x}[x]each (0 1;1 0)}@ mod[y bin x;2]}[;where x in "[]"]each distinct d[x] each a}                          / check if supports SSL
-sum f each read0 `p7                                                                                                            / part 2
+sum f peach read0 `p7                                                                                                           / part 2
 
 "Problem 8"
 m:6 50#0b                                                                                                                       / matrix m
