@@ -187,7 +187,8 @@ i:+1_0:`p22                                                                     
 k:(0'+i@)'30 37+\:!3                                                                                                    / extract vals
 a:k 1;u:*k                                                                                                              / avail and used
 (+/#:[a]>1+(a@<a)bin u@<u)-+/a>u                                                                                        / part 1
-0N!"part 2: count by eye";                                                                                              / part 2
+0N!"part 2: count by eye using:";                                                                                       / part 2
+.q.show(1+|/{"J"$1_'-2#"-"\: *:" "\:x}'+i)#+(a;u)                                                                       / turn available/used into a matrix, use pen/paper/eye for this
 
 "Problem 23"
 \l assembunny.k
