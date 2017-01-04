@@ -193,7 +193,8 @@ i:flip 1 _ read0`p22                                                            
 k:(value each flip i@)each 30 37+\:til 3                                                                                        / extract vals
 a:k 1;u:first k                                                                                                                 / avail and used
 (sum count[a]>1+(asc a)bin asc u)-sum a>u                                                                                       / part 1
-0N!"part 2: count by eye";                                                                                                      / part 2
+0N!"part 2: count by eye using:";                                                                                               / part 2
+show(1+max{"J"$1 _'-2#"-"vs first" "vs x}each flip i)#flip(a;u)                                                                 / turn available/used into a matrix, solve by pen/paper/eye
 
 "Problem 23"
 \l assembunny.q
