@@ -156,7 +156,7 @@ i:0@*0:`p19                                                                     
 **-2#{$[1=.q.mod[#x;2];1_;]x@2*!-_-.5*#x}\1+!i                                                                          / part 1 alternatively, from http://www.exploringbinary.com/powers-of-two-in-the-josephus-problem 
 /                                                                                                                       / 1+2*i-2 xexp_.q.xlog[2;i]
 i-3 xexp_.q.xlog[3;i]                                                                                                   / part 2 (credit: u/natemago and others from reddit), my original solution was too slow+ugly to post
-
+/                                                                                                                       / think thomas smyth also posted a similar approach
 
 "Problem 20"
 x:+|\x@:<x:0''"-"\:'0:`p20                                                                                              / from nick psaris (his solution was so much nicer than mine had to put it here)
