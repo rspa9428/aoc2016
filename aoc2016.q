@@ -162,6 +162,7 @@ i:value first read0`p19                                                         
 first first -2#{$[1=mod[count x;2];1 _ ;]x 2*til ceiling .5*count x}\[1+til i]                                                  / part 1 alternatively, from http://www.exploringbinary.com/powers-of-two-in-the-josephus-problem 
 /                                                                                                                               / 1+2*i-2 xexp floor xlog[2;i]
 i-3 xexp floor xlog[3;i]                                                                                                        / part 2 (credit: u/natemago and others from reddit), my original solution was too slow+ugly to post
+/                                                                                                                               / think thomas smyth also posted a similar approach
 
 "Problem 20"
 x:flip maxs x:asc value each ' "-"vs'read0 `p20                                                                                 / from nick psaris (his solution was so much nicer than mine had to put it here)
